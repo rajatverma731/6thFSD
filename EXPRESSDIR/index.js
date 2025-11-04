@@ -17,6 +17,32 @@ app.listen(port,()=>{
     console.log(`App is listening on port ${port}`)
 })
 
-app.use((req,res)=>{
-    console.log("request recieved")
+// app.get("/",(req,res) =>{
+//     res.send("This is the root Path");
+// })
+app.get("/apple",(req,res) =>{
+    res.send("This is the apple Path");
 })
+app.get("/banana",(req,res) =>{
+    res.send("This is the banana Path");
+})
+app.get("/:username/:id",(req,res)=>{
+    console.log(req.params);
+    res.send("this is a basic response")
+})
+
+// app.all("/*",(req,res) =>{
+//     res.send("This is wrong route");
+// })
+
+// app.use((req,res)=>{ // app.use is used to handle middleware before the response is sent.
+    // console.log("request recieved") // this gives a notification to the node that the request is accepted
+    // res.send("This is a basic response");
+    // res.send({
+    //     name: "Apple",
+    //     color: "Red",
+    //     Weight: "15 Gm"
+    // })
+    // res.send("<h1>Fruits</h1> <ul> <li>Guava</li> <li>Banana</li> </ul>"
+    // )
+// })
