@@ -83,5 +83,5 @@
 // }
 
 
-// HIGHER ORDER FUNCTION - Takes one or multiple functions as arguments and return a functio
+// HIGHER ORDER FUNCTION - Takes one or multiple functions as arguments and return a function
  

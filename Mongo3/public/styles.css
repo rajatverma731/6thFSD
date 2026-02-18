@@ -1,0 +1,13 @@
+body{
+    margin-left: 20px;
+
+}
+.chat{
+    background-color: aliceblue;
+    padding-right: 200px;
+}
+
+.msg{
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
